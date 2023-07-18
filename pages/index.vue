@@ -125,10 +125,5 @@
 import dayjs from 'dayjs'
 import { MapPinIcon } from '@heroicons/vue/24/outline'
 const showMoreIntro = ref(false)
-const timezone = ref(dayjs().format('DD MMMM hh:mm:ss UTC Z'))
-
-const timer = setInterval(() => {
-  timezone.value = dayjs().format('DD MMMM hh:mm:ss UTC Z')
-}, 1000)
-onUnmounted(() => clearInterval(timer))
+const timezone = ref(dayjs().format('DD MMMM HH:mm (UTC Z)'))
 </script>
