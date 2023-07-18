@@ -1,63 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Shien Yuan Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+#### Hey there!
 
-## Setup
+I'm Shien[shee-en], a **Full-stack Web Developer** and **Designer** specialising in comprehensive web solutions. From visually appealing business websites to complex web applications, I have the expertise to handle the entire software development cycle, providing end-to-end web solutions. 
 
-Make sure to install the dependencies:
+#### The professional me:
 
-```bash
-# npm
-npm install
+When it comes to web development, I rely on mordern stacks like **Vue.js**,  **Golang** and **GCP**. I stay updated with evolving technologies and engage with leading resources such as GitHub, Dev.to, and Stack Overflow. Collaboration is my passion, and I enjoy working with people to achieve exceptional results
 
-# pnpm
-pnpm install
+What sets me apart is my talent for combining seamless functionality with beautiful design. I have a great eye for aesthetics and love creating experiences that put users first. From start to finish, I take pride in being the creative force behind all my personal works, including this portfolio site that showcases my versatile skills as both a designer and a developer. 
 
-# yarn
-yarn install
-```
+#### The everyday me:
 
-## Development Server
+But hey, life isn't just about coding! When I'm not immersed in lines of code, you'll find me embracing a variety of hobbies. I enjoy hitting the gym, indulging in woodworking projects, exploring my culinary skills, and capturing moments through photography. Oh, and did I mention I'm a total cat lover?
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Ultimately, my goal is to create meaningful web applications that have a positive impact on people's lives. So, let's connect and join forces to create something truly extraordinary together!"
