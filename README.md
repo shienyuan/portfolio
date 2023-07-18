@@ -1,3 +1,10 @@
+### [Visit My Portfolio](https://shieny.dev)
+
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/shienyuan/shienyuan/master?label=version&link=https%3A%2F%2Fshieny.dev)
+![GitHub](https://img.shields.io/github/license/shienyuan/shienyuan)
+
+---
+
 ### Hey there!
 
 I'm Shien[shee-en], a **Full-stack Web Developer** and **Designer** specialising in comprehensive web solutions. From visually appealing business websites to complex web applications, I have the expertise to handle the entire software development cycle, providing end-to-end web solutions. 
