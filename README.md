@@ -1,4 +1,4 @@
-# Shien Yuan Portfolio
+# Shien Yuan
 
 #### Hey there!
 
