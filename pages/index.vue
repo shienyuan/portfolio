@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div class="bg-gray-100 p-5 rounded-xl">
+    <AppCard class="mb-6">
       <div :class="showMoreIntro ? '' : ''">
-        <h2 class="font-semibold text-gray-500 mb-1">
-          Hey There!
+        <h2 class="text-2xl">
+          Hey There! 👋
         </h2>
+        <hr class="my-5">
         <p class="mb-6">
           I'm Shien[shee-en], a <span class="font-bold">Full-stack Web Developer</span> and <span class="font-bold">Designer</span> specialising in comprehensive web solutions. From visually appealing business websites to complex web applications, I have the expertise to handle the entire software development cycle, providing end-to-end web solutions.
         </p>
@@ -16,7 +17,7 @@
       </div>
 
       <div :class="showMoreIntro ? '' : 'hidden'">
-        <h2 class="font-semibold text-gray-500 mb-1">
+        <h2 class="text-gray-500 mb-1">
           The professional me:
         </h2>
         <p class="mb-4">
@@ -26,7 +27,7 @@
           What sets me apart is my talent for combining seamless functionality with beautiful design. I have a great eye for aesthetics and love creating experiences that put users first. From start to finish, I take pride in being the creative force behind all my personal works, including this portfolio site that showcases my versatile skills as both a designer and a developer.
         </p>
 
-        <h2 class="font-semibold text-gray-500 mb-1">
+        <h2 class="text-gray-500 mb-1">
           The everyday me:
         </h2>
         <p class="mb-4">
@@ -34,11 +35,28 @@
         </p>
         <p>Ultimately, my goal is to create meaningful web applications that have a positive impact on people's lives. So, let's connect and join forces to create something truly extraordinary together!"</p>
       </div>
-    </div>
+    </AppCard>
+
+    <AppCard>
+      <p>I'm based in</p>
+      <h2 class="font-bold text-xl">
+        Auckland,
+      </h2>
+      <h2 class="font-bold text-xl">
+        New Zealand
+      </h2>
+      <p>{{ timezone }}</p>
+    </AppCard>
   </div>
 </template>
 
 <script lang="ts" setup>
+import dayjs from 'dayjs'
 const showMoreIntro = ref(false)
+const timezone = ref('')
 
+const now = setInterval(() => {
+  timezone.value = dayjs().format('DD MMMM hh:mm:ss UTC Z')
+}, 1000)
+onUnmounted(() => clearInterval(now))
 </script>
