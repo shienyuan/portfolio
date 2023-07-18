@@ -37,26 +37,98 @@
       </div>
     </AppCard>
 
-    <AppCard>
-      <p>I'm based in</p>
-      <h2 class="font-bold text-xl">
-        Auckland,
-      </h2>
-      <h2 class="font-bold text-xl">
-        New Zealand
-      </h2>
-      <p>{{ timezone }}</p>
+    <AppCard class="mb-6">
+      <div class="flex items-start justify-between">
+        <div>
+          <p>I'm based in</p>
+          <h2 class="font-bold text-xl">
+            Auckland,
+          </h2>
+          <h2 class="font-bold text-xl">
+            New Zealand
+          </h2>
+          <ClientOnly>
+            <p>{{ timezone }}</p>
+          </ClientOnly>
+        </div>
+        <MapPinIcon class="w-10" />
+      </div>
+      <div class="mt-6">
+        <img
+          class="rounded-xl aspect-video"
+          src="~/assets/images/about-1.jpeg"
+          alt="picture of mt cook"
+        >
+      </div>
     </AppCard>
+
+    <AppCard class="mb-6">
+      <div class="flex justify-between justify-start">
+        <div>
+          <h2 class="text-xl font-bold">
+            Github
+          </h2>
+          <h2 class="text-gray-700">
+            /shienyuan
+          </h2>
+        </div>
+
+        <div class="w-10">
+          <img
+            src="~/assets/logos/github.svg"
+            alt=""
+          >
+        </div>
+      </div>
+
+      <hr class="my-6">
+
+      <div />
+    </AppCard>
+
+    <AppCard class="mb-10">
+      <div class="flex justify-between justify-start">
+        <div>
+          <h2 class="text-xl font-bold">
+            Twitter
+          </h2>
+          <h2 class="text-gray-700">
+            @shien__yuan
+          </h2>
+        </div>
+
+        <div class="w-10">
+          <img
+            src="~/assets/logos/twitter.svg"
+            alt=""
+          >
+        </div>
+      </div>
+
+      <hr class="my-6">
+
+      <div />
+    </AppCard>
+
+    <div class="text-center">
+      <p class="mb-4 text-gray-700">
+        Enough about you Shien...
+      </p>
+      <AppButton @click="$router.push('/works')">
+        Show me the skills!
+      </AppButton>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import dayjs from 'dayjs'
+import { MapPinIcon } from '@heroicons/vue/24/outline'
 const showMoreIntro = ref(false)
-const timezone = ref('')
+const timezone = ref(dayjs().format('DD MMMM hh:mm:ss UTC Z'))
 
-const now = setInterval(() => {
+const timer = setInterval(() => {
   timezone.value = dayjs().format('DD MMMM hh:mm:ss UTC Z')
 }, 1000)
-onUnmounted(() => clearInterval(now))
+onUnmounted(() => clearInterval(timer))
 </script>

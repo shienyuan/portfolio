@@ -15,40 +15,42 @@
 
       <div class="hidden lg:flex justify-end">
         <NuxtLink class="text-gray-700" to="https://github.com/shienyuan" target="_blank">
-          <nuxt-icon class="m-0 " name="logos/github" />
+          <nuxt-icon class="m-0 " name="github" />
         </NuxtLink>
       </div>
     </nav>
 
-    <HLDialog class="lg:hidden" :open="mobileMenuOpen" @close="mobileMenuOpen = false">
-      <HLDialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-8 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between md:justify-end">
-          <NuxtLink class="md:hidden font-bold" to="/">
-            Shien Yuan
-          </NuxtLink>
-          <button type="button" class="text-gray-700" @click="mobileMenuOpen = false">
-            <XMarkIcon class="h-6 w-6" />
-          </button>
-        </div>
-
-        <div class="mt-6">
-          <div class="flex flex-col">
-            <NuxtLink to="/" class="mb-3">
-              About
+    <ClientOnly>
+      <HLDialog class="lg:hidden" :open="mobileMenuOpen" @close="mobileMenuOpen = false">
+        <HLDialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-8 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between md:justify-end">
+            <NuxtLink class="md:hidden font-bold" to="/">
+              Shien Yuan
             </NuxtLink>
-            <NuxtLink to="/works" class="mb-3">
-              Works
-            </NuxtLink>
-            <NuxtLink to="/resume" class="mb-3">
-              Resume
-            </NuxtLink>
-            <NuxtLink to="/contact">
-              Contact
-            </NuxtLink>
+            <button type="button" class="text-gray-700" @click="mobileMenuOpen = false">
+              <XMarkIcon class="h-6 w-6" />
+            </button>
           </div>
-        </div>
-      </HLDialogPanel>
-    </HLDialog>
+
+          <div class="mt-6">
+            <div class="flex flex-col">
+              <NuxtLink to="/" class="mb-3">
+                About
+              </NuxtLink>
+              <NuxtLink to="/works" class="mb-3">
+                Works
+              </NuxtLink>
+              <NuxtLink to="/resume" class="mb-3">
+                Resume
+              </NuxtLink>
+              <NuxtLink to="/contact">
+                Contact
+              </NuxtLink>
+            </div>
+          </div>
+        </HLDialogPanel>
+      </HLDialog>
+    </ClientOnly>
   </header>
 </template>
 
