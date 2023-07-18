@@ -1,0 +1,41 @@
+# Dependencies
+node_modules
+jspm_packages
+
+package-lock.json
+packages/*/README.md
+packages/*/LICENSE
+*/**/yarn.lock
+/.yarn
+
+# Logs
+*.log
+
+# Temp directories
+.temp
+.tmp
+.cache
+
+# Generated dirs
+dist
+.nuxt
+.nuxt-*
+.vercel
+.netlify
+.output
+.output-*
+.gen
+
+# VSCode
+.vscode
+
+# Intellij idea
+*.iml
+.idea
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.env
