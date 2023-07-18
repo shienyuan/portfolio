@@ -2,6 +2,7 @@
 
 ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/shienyuan/shienyuan/master?label=version&link=https%3A%2F%2Fshieny.dev)
 ![GitHub](https://img.shields.io/github/license/shienyuan/shienyuan)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e790b62-2f83-4b38-801c-4f081de34d7c/deploy-status)](https://app.netlify.com/sites/shienyuan/deploys)
 
 ---
 
