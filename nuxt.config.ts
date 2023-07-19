@@ -4,25 +4,27 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     prerender: {
-      crawlLinks: true
-    }
+      crawlLinks: true,
+    },
   },
   modules: [
-    '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     'nuxt-icons',
     [
-      'nuxt-headlessui', {
-        prefix: 'HL'
-      }
+      'nuxt-headlessui',
+      {
+        prefix: 'HL',
+      },
     ],
     [
-      '@nuxtjs/google-fonts', {
+      '@nuxtjs/google-fonts',
+      {
         families: {
           Nunito: true,
           download: true,
-          inject: true
-        }
-      }]
-  ]
+          inject: true,
+        },
+      },
+    ],
+  ],
 })
