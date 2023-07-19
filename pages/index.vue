@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <AppCard class="mb-6">
+  <div class="space-y-6">
+    <AppCard>
       <div :class="showMoreIntro ? '' : ''">
         <h2 class="text-2xl">Hey There! 👋</h2>
         <hr class="my-5" />
@@ -56,7 +56,7 @@
       </div>
     </AppCard>
 
-    <AppCard class="mb-6">
+    <AppCard>
       <div class="flex items-start justify-between">
         <div>
           <p>I'm based in</p>
@@ -79,7 +79,7 @@
       </div>
     </AppCard>
 
-    <AppCard class="mb-6">
+    <AppCard>
       <div class="flex justify-between justify-start">
         <div>
           <h2 class="text-xl font-bold">Github</h2>
@@ -96,7 +96,7 @@
       <div />
     </AppCard>
 
-    <AppCard class="mb-10">
+    <AppCard>
       <div class="flex justify-between justify-start">
         <div>
           <h2 class="text-xl font-bold">Twitter</h2>
@@ -113,7 +113,7 @@
       <div />
     </AppCard>
 
-    <div class="text-center">
+    <div class="text-center pt-8">
       <p class="mb-4 text-gray-700">Enough about you Shien...</p>
       <AppButton @click="$router.push('/works')">
         Show me the skills!

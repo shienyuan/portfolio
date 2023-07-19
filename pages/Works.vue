@@ -1,5 +1,139 @@
-<template><div>Works</div></template>
+<template>
+  <div>
+    <HLTabGroup>
+      <HLTabList class="flex rounded-full bg-gray-200">
+        <HLTab
+          v-for="category in Object.keys(categories)"
+          :key="category"
+          v-slot="{ selected }"
+          as="template"
+        >
+          <button
+            :class="[
+              'w-full rounded-full py-2.5 text-sm font-medium leading-5',
+              selected ? 'bg-gray-400 shadow' : '',
+            ]"
+          >
+            {{ category }}
+          </button>
+        </HLTab>
+      </HLTabList>
 
-<script lang="ts" setup></script>
+      <HLTabPanels class="mt-6">
+        <HLTabPanel
+          v-for="(works, id) in Object.values(categories)"
+          :key="id"
+          class="space-y-6"
+        >
+          <AppCard v-for="(w, i) in works" :key="i">
+            <h2 class="font-bold">
+              {{ w.title }}
+            </h2>
+            <h3 class="text-gray-500">
+              {{ w.description }}
+            </h3>
 
-<style scoped></style>
+            <div v-for="(s, i) in works[id].stacks" :key="i">
+              <p>{{ s.title }}</p>
+            </div>
+          </AppCard>
+        </HLTabPanel>
+      </HLTabPanels>
+    </HLTabGroup>
+  </div>
+</template>
+
+<script setup>
+const categories = ref({
+  'Static Sites': [
+    {
+      id: 1,
+      title: 'Stella',
+      description: 'Digital Marketing Agency',
+      img: '',
+      link: '',
+      stacks: [
+        {
+          icon: '',
+          title: 'Jamstack',
+        },
+        {
+          icon: '',
+          title: 'Made with Vue.js',
+        },
+        {
+          icon: '',
+          title: 'Hosted on Netlify',
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Stella',
+      description: 'Digital Marketing Agency',
+      img: '',
+      link: '',
+      stacks: [
+        {
+          icon: '',
+          title: 'Jamstack',
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Stella',
+      description: 'Digital Marketing Agency',
+      img: '',
+      link: '',
+      stacks: [
+        {
+          icon: '',
+          title: 'Jamstack',
+        },
+      ],
+    },
+  ],
+  'Web Apps': [
+    {
+      id: 1,
+      title: 'Stella',
+      description: 'Digital Marketing Agency',
+      img: '',
+      link: '',
+      stacks: [
+        {
+          icon: '',
+          title: 'Jamstack',
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Stella',
+      description: 'Digital Marketing Agency',
+      img: '',
+      link: '',
+      stacks: [
+        {
+          icon: '',
+          title: 'Jamstack',
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Stella',
+      description: 'Digital Marketing Agency',
+      img: '',
+      link: '',
+      stacks: [
+        {
+          icon: '',
+          title: 'Jamstack',
+        },
+      ],
+    },
+  ],
+})
+</script>
