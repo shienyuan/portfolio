@@ -1,5 +1,9 @@
 <template>
-  <button class="bg-gray-300 px-6 py-2 rounded-full" type="button" @click="$emit('click')">
+  <button
+    class="bg-gray-300 px-6 py-2 rounded-full"
+    type="button"
+    @click="$emit('click')"
+  >
     <slot />
   </button>
 </template>
@@ -8,6 +12,4 @@
 defineEmits(['click'])
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
