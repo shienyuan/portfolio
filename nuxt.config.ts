@@ -30,6 +30,7 @@ export default defineNuxtConfig({
       '@nuxt/image',
       {
         quality: 80,
+        provider: 'netlify',
       },
     ],
   ],
