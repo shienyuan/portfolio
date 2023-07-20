@@ -26,5 +26,11 @@ export default defineNuxtConfig({
         },
       },
     ],
+    [
+      '@nuxt/image',
+      {
+        quality: 80,
+      },
+    ],
   ],
 })

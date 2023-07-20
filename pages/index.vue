@@ -71,7 +71,7 @@
         <MapPinIcon class="w-10" />
       </div>
       <div class="mt-6">
-        <img
+        <nuxt-img
           alt="picture of mt cook"
           class="rounded-xl aspect-video"
           src="~/assets/images/about-1.jpeg"
@@ -87,7 +87,7 @@
         </div>
 
         <div class="w-10">
-          <img alt="" src="~/assets/logos/github.svg" />
+          <nuxt-img alt="" src="~/assets/logos/github.svg" />
         </div>
       </div>
 
@@ -104,7 +104,7 @@
         </div>
 
         <div class="w-10">
-          <img alt="" src="~/assets/logos/twitter.svg" />
+          <nuxt-img alt="" src="~/assets/logos/twitter.svg" />
         </div>
       </div>
 

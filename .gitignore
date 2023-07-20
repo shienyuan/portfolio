@@ -316,3 +316,6 @@ docs/_book
 
 npm-debug.log
 yarn-error.log
+
+# Local Netlify folder
+.netlify

@@ -36,7 +36,13 @@
           class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-8 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
           <div class="flex items-center justify-between md:justify-end">
-            <NuxtLink class="md:hidden font-bold" to="/"> Shien Yuan </NuxtLink>
+            <NuxtLink
+              class="md:hidden font-bold"
+              to="/"
+              @click="mobileMenuOpen = false"
+            >
+              Shien Yuan
+            </NuxtLink>
             <button
               type="button"
               class="text-gray-700"
@@ -48,10 +54,26 @@
 
           <div class="mt-6">
             <div class="flex flex-col">
-              <NuxtLink to="/" class="mb-3"> About </NuxtLink>
-              <NuxtLink to="/works" class="mb-3"> Works </NuxtLink>
-              <NuxtLink to="/resume" class="mb-3"> Resume </NuxtLink>
-              <NuxtLink to="/contact"> Contact </NuxtLink>
+              <NuxtLink to="/" class="mb-3" @click="mobileMenuOpen = false">
+                About
+              </NuxtLink>
+              <NuxtLink
+                to="/works"
+                class="mb-3"
+                @click="mobileMenuOpen = false"
+              >
+                Works
+              </NuxtLink>
+              <NuxtLink
+                to="/resume"
+                class="mb-3"
+                @click="mobileMenuOpen = false"
+              >
+                Resume
+              </NuxtLink>
+              <NuxtLink to="/contact" @click="mobileMenuOpen = false">
+                Contact
+              </NuxtLink>
             </div>
           </div>
         </HLDialogPanel>
