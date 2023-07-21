@@ -74,7 +74,9 @@
         <nuxt-img
           alt="picture of mt cook"
           class="rounded-xl aspect-video"
-          src="/images/about-1.jpeg"
+          src="/media/images/about-1.jpeg"
+          width="100"
+          height="100"
         />
       </div>
     </AppCard>
