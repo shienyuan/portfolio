@@ -74,7 +74,7 @@
         <nuxt-img
           alt="picture of mt cook"
           class="rounded-xl aspect-video"
-          src="~/assets/images/about-1.jpeg"
+          src="/images/about-1.jpeg"
         />
       </div>
     </AppCard>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="w-10">
-          <nuxt-img alt="" src="~/assets/logos/github.svg" />
+          <nuxt-img alt="github logo" src="/logos/github.svg" />
         </div>
       </div>
 
@@ -104,7 +104,7 @@
         </div>
 
         <div class="w-10">
-          <nuxt-img alt="" src="~/assets/logos/twitter.svg" />
+          <nuxt-img alt="twitter logo" src="/logos/twitter.svg" />
         </div>
       </div>
 
