@@ -71,12 +71,9 @@
         <MapPinIcon class="w-10" />
       </div>
       <div class="mt-6">
-        <nuxt-img
+        <img
           alt="picture of mt cook"
-          class="rounded-xl aspect-video"
-          src="/media/images/about-1.jpeg"
-          width="100"
-          height="100"
+          src="/media/images/about-1.jpeg?nf_resize=smartcrop&w=300&h=300"
         />
       </div>
     </AppCard>

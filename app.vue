@@ -12,4 +12,8 @@
 .nuxt-icon svg {
   margin-bottom: 0;
 }
+
+html {
+  font-family: Roboto, serif;
+}
 </style>

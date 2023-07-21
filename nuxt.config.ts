@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       '@nuxtjs/google-fonts',
       {
         families: {
-          Nunito: true,
+          Roboto: true,
           download: true,
           inject: true,
         },
