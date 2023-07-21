@@ -73,7 +73,7 @@
       <div class="mt-6">
         <nuxt-img
           alt="picture of mt cook"
-          src="media/images/about-1.jpeg"
+          src="/.netlify/large-media/media/images/about-1.jpeg"
           fit="fill"
           height="100"
           width="100"
