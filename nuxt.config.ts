@@ -33,5 +33,11 @@ export default defineNuxtConfig({
         provider: 'netlify',
       },
     ],
+    [
+      'nuxt-gtag',
+      {
+        id: 'G-6K7PHF2ZL0',
+      },
+    ],
   ],
 })
