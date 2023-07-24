@@ -78,6 +78,10 @@
           height="100"
           width="100"
         />
+        <nuxt-img
+          src="/images/about-1.jpeg"
+          :modifiers="{ grayscale: true, tint: '#ff0166', rotate: 45 }"
+        />
       </div>
     </AppCard>
 
