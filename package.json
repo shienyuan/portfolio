@@ -34,7 +34,6 @@
     "@heroicons/vue": "^2.0.18",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "dayjs": "^1.11.9",
-    "nuxt-headlessui": "^1.1.4",
-    "nuxt-icons": "^3.2.1"
+    "nuxt-headlessui": "^1.1.4"
   }
 }

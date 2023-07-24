@@ -21,7 +21,7 @@
           to="https://github.com/shienyuan"
           target="_blank"
         >
-          <nuxt-icon class="m-0" name="github" />
+          <!--          <nuxt-icon class="m-0" name="github" />-->
         </NuxtLink>
       </div>
     </nav>

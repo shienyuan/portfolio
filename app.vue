@@ -9,10 +9,6 @@
 <script lang="ts" setup></script>
 
 <style>
-.nuxt-icon svg {
-  margin-bottom: 0;
-}
-
 html {
   font-family: Roboto, serif;
 }

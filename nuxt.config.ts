@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-icons',
     [
       'nuxt-headlessui',
       {
@@ -30,7 +29,6 @@ export default defineNuxtConfig({
       '@nuxt/image',
       {
         quality: 80,
-        provider: 'netlify',
       },
     ],
     [
