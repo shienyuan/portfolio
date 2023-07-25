@@ -3,7 +3,19 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   modules: [
-    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/tailwindcss',
+      {
+        config: {
+          theme: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              serif: ['Lora', 'serif'],
+            },
+          },
+        },
+      },
+    ],
     [
       'nuxt-headlessui',
       {
