@@ -8,14 +8,14 @@
           v-slot="{ selected }"
           as="template"
         >
-          <button
+          <AppButton
             :class="[
-              'w-full rounded-full py-2.5 text-sm font-medium leading-5',
-              selected ? 'bg-gray-400 shadow' : '',
+              'w-full',
+              selected ? 'bg-gray-400 shadow' : 'bg-transparent',
             ]"
           >
             {{ category }}
-          </button>
+          </AppButton>
         </HLTab>
       </HLTabList>
 

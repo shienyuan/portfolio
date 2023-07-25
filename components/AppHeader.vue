@@ -2,7 +2,7 @@
   <header class="bg-gray-100 rounded-full">
     <nav class="flex items-center justify-between px-5 py-2">
       <div class="flex lg:flex-1">
-        <NuxtLink to="/" class="font-bold"> Shien Yuan </NuxtLink>
+        <NuxtLink to="/" class="text-gray-700"> Shien Yuan </NuxtLink>
       </div>
 
       <div class="flex lg:hidden">

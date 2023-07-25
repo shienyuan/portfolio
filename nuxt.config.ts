@@ -19,7 +19,8 @@ export default defineNuxtConfig({
       '@nuxtjs/google-fonts',
       {
         families: {
-          Roboto: true,
+          Poppins: true,
+          Lora: true,
           download: true,
           inject: true,
         },
