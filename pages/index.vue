@@ -3,9 +3,9 @@
 </template>
 
 <script lang="ts" setup>
-navigateTo({
-  path: '/about',
-})
+// navigateTo({
+//   path: '/about',
+// })
 </script>
 
 <style scoped></style>
