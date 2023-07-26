@@ -3,8 +3,10 @@
 </template>
 
 <script lang="ts" setup>
-navigateTo({
-  path: '/about',
+onMounted(async () => {
+  await navigateTo({
+    path: '/about',
+  })
 })
 </script>
 
