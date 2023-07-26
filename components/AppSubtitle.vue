@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-100 p-6 rounded-xl">
+  <h2 class="text-gray-700 text-sm">
     <slot />
-  </div>
+  </h2>
 </template>
 
 <script setup lang="ts"></script>

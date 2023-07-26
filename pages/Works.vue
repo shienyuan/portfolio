@@ -1,19 +1,14 @@
 <template>
   <div>
     <HLTabGroup>
-      <HLTabList class="flex rounded-full bg-gray-200">
+      <HLTabList class="flex rounded-full bg-gray-100">
         <HLTab
           v-for="category in Object.keys(categories)"
           :key="category"
           v-slot="{ selected }"
           as="template"
         >
-          <AppButton
-            :class="[
-              'w-full',
-              selected ? 'bg-gray-400 shadow' : 'bg-transparent',
-            ]"
-          >
+          <AppButton :class="['w-full', !selected && 'bg-transparent']">
             {{ category }}
           </AppButton>
         </HLTab>
@@ -33,7 +28,7 @@
               {{ w.description }}
             </h3>
 
-            <div v-for="(s, i) in works[id].stacks" :key="i">
+            <div v-for="(s, j) in works[id].stacks" :key="j">
               <p>{{ s.title }}</p>
             </div>
           </AppCard>

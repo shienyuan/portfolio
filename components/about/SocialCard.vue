@@ -3,19 +3,19 @@
     <NuxtLink :to="props.link" target="_blank">
       <div class="flex justify-between justify-start">
         <div>
-          <h2 class="text-xl font-bold">
+          <AppTitle>
             {{ props.title }}
-          </h2>
-          <h2 class="text-gray-700">
+          </AppTitle>
+          <AppSubtitle>
             {{ props.subtitle }}
-          </h2>
+          </AppSubtitle>
         </div>
 
         <div>
           <nuxt-img
+            :src="props.icon"
             alt="github logo"
             sizes="sm:40px lg:50px"
-            :src="props.icon"
           />
         </div>
       </div>

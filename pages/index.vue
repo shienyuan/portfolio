@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-onMounted(async () => {
+onBeforeMount(async () => {
   await navigateTo({
     path: '/about',
   })

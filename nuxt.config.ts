@@ -25,8 +25,8 @@ export default defineNuxtConfig({
       '@nuxtjs/google-fonts',
       {
         families: {
-          Poppins: true,
-          Lora: true,
+          Poppins: [400, 500, 700],
+          Lora: [400, 500, 700],
           download: true,
           inject: true,
         },

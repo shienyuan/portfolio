@@ -2,17 +2,16 @@
   <div class="space-y-6">
     <AppCard>
       <div :class="showMoreIntro ? '' : ''">
-        <h2 class="text-2xl font-serif font-bold">Hey There! 👋</h2>
+        <h2 class="text-2xl font-serif">Hey There! 👋</h2>
         <hr class="my-5" />
         <p class="mb-6">
           I'm Shien[<span class="italic text-gray-600">shee-en</span>], a
           <span class="font-bold">Full-stack Web Developer</span>
           and
-          <span class="font-bold">Designer</span> 🧑‍🎨 specialising in
-          comprehensive web solutions 🌐. From visually appealing business
-          websites to complex web applications, I have the expertise to handle
-          the entire software development cycle 💻, providing end-to-end web
-          solutions 🚀.
+          <span class="font-bold">Designer</span> specialising in comprehensive
+          web solutions. From visually appealing business websites to complex
+          web applications, I have the expertise to handle the entire software
+          development cycle, providing end-to-end web solutions.
         </p>
         <div v-if="!showMoreIntro" class="text-center">
           <AppButton @click="showMoreIntro = true"> More about me </AppButton>
@@ -59,16 +58,16 @@
     <AppCard>
       <div class="flex items-start justify-between">
         <div>
-          <p>I'm based in</p>
-          <h2 class="font-bold text-xl">Auckland,</h2>
-          <h2 class="font-bold text-xl mb-3">New Zealand</h2>
+          <p class="text-gray-700 text-sm">I'm based in</p>
+          <AppTitle>Auckland,</AppTitle>
+          <AppTitle>New Zealand</AppTitle>
           <ClientOnly>
-            <p class="text-xs text-gray-700">
+            <p class="text-xs text-gray-700 mt-3">
               {{ timezone }}
             </p>
           </ClientOnly>
         </div>
-        <MapPinIcon class="w-[50px] lg:w-[60px] text-gray-400" />
+        <MapPinIcon class="w-[50px] lg:w-[60px] text-gray-500" />
       </div>
       <div class="mt-6">
         <nuxt-img class="rounded shadow" src="/images/about-1.jpeg" />
@@ -88,12 +87,13 @@
       title="Twitter"
       subtitle="@shien__yuan"
       icon="/logos/twitter.png"
+      link="https://twitter.com/shien__yuan"
     >
       Content
     </AboutSocialCard>
 
     <div class="text-center pt-8">
-      <p class="mb-4 text-gray-700 italic font-serif">
+      <p class="mb-4 text-gray-700 italic font-serif text-sm">
         Enough about you Shien...
       </p>
       <AppButton @click="$router.push('/works')">
@@ -108,5 +108,5 @@ import dayjs from 'dayjs'
 import { MapPinIcon } from '@heroicons/vue/24/solid'
 
 const showMoreIntro = ref(false)
-const timezone = ref(dayjs().format('DD MMMM HH:mm (UTC Z)'))
+const timezone = ref(dayjs().format('DD MMM HH:mm (UTC Z)'))
 </script>
