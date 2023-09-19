@@ -5,23 +5,31 @@
         <NuxtLink to="/" class="text-gray-700"> Shien Yuan </NuxtLink>
       </div>
 
-      <div class="flex lg:hidden">
-        <button
-          type="button"
-          class="text-gray-700"
-          @click="mobileMenuOpen = true"
-        >
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
-        </button>
-      </div>
+      <!--      <div class="flex lg:hidden">-->
+      <!--        <button-->
+      <!--          type="button"-->
+      <!--          class="text-gray-700"-->
+      <!--          @click="mobileMenuOpen = true"-->
+      <!--        >-->
+      <!--          <Bars3Icon class="h-6 w-6" aria-hidden="true" />-->
+      <!--        </button>-->
+      <!--      </div>-->
 
-      <div class="hidden lg:flex justify-end">
+      <div class="flex justify-end">
         <NuxtLink
-          class="text-gray-700"
+          class="text-gray-700 me-2"
           to="https://github.com/shienyuan"
           target="_blank"
         >
           Github
+        </NuxtLink>
+
+        <NuxtLink
+          class="text-gray-700"
+          to="https://www.linkedin.com/in/shien-yuan/"
+          target="_blank"
+        >
+          LinkedIn
         </NuxtLink>
       </div>
     </nav>
@@ -85,7 +93,7 @@
 </template>
 
 <script setup>
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { XMarkIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
 </script>

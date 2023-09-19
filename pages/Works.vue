@@ -21,15 +21,33 @@
           class="space-y-6"
         >
           <AppCard v-for="(w, i) in works" :key="i">
-            <h2 class="font-bold">
+            <AppTitle class="font-bold">
               {{ w.title }}
-            </h2>
-            <h3 class="text-gray-500">
+            </AppTitle>
+            <AppSubtitle class="text-gray-500">
               {{ w.description }}
-            </h3>
+            </AppSubtitle>
 
-            <div v-for="(s, j) in works[id].stacks" :key="j">
-              <p>{{ s.title }}</p>
+            <AppHr />
+
+            <div class="mb-5 flex flex-col gap-y-3">
+              <nuxt-link
+                v-for="(s, j) in w.stacks"
+                :key="j"
+                :to="s.link"
+                target="_blank"
+              >
+                <div class="flex gap-3">
+                  <nuxt-img :src="`/logos/${s.icon}`" width="30" />
+                  <p>
+                    {{ s.title }}
+                  </p>
+                </div>
+              </nuxt-link>
+            </div>
+
+            <div>
+              <nuxt-img :src="`/images/${w.img}`" />
             </div>
           </AppCard>
         </HLTabPanel>
@@ -45,20 +63,23 @@ const categories = ref({
       id: 1,
       title: 'Stella',
       description: 'Digital Marketing Agency',
-      img: '',
-      link: '',
+      img: 'placeholder.png',
+      link: '#',
       stacks: [
         {
-          icon: '',
+          icon: 'jamstack.png',
           title: 'Jamstack',
+          link: 'https://jamstack.org/',
         },
         {
-          icon: '',
-          title: 'Made with Vue.js',
+          icon: 'vue.png',
+          title: 'Made with Vue 3',
+          link: 'https://vuejs.org/',
         },
         {
-          icon: '',
+          icon: 'netlify.png',
           title: 'Hosted on Netlify',
+          link: 'https://www.netlify.com/',
         },
       ],
     },
@@ -66,12 +87,13 @@ const categories = ref({
       id: 2,
       title: 'Stella',
       description: 'Digital Marketing Agency',
-      img: '',
-      link: '',
+      img: 'placeholder.png',
+      link: '#',
       stacks: [
         {
           icon: '',
           title: 'Jamstack',
+          link: 'https://www.netlify.com/',
         },
       ],
     },
@@ -79,12 +101,13 @@ const categories = ref({
       id: 3,
       title: 'Stella',
       description: 'Digital Marketing Agency',
-      img: '',
-      link: '',
+      img: 'placeholder.png',
+      link: '#',
       stacks: [
         {
           icon: '',
           title: 'Jamstack',
+          link: 'https://www.netlify.com/',
         },
       ],
     },
@@ -94,12 +117,13 @@ const categories = ref({
       id: 1,
       title: 'Stella',
       description: 'Digital Marketing Agency',
-      img: '',
-      link: '',
+      img: 'placeholder.png',
+      link: '#',
       stacks: [
         {
           icon: '',
           title: 'Jamstack',
+          link: 'https://www.netlify.com/',
         },
       ],
     },
@@ -107,12 +131,13 @@ const categories = ref({
       id: 2,
       title: 'Stella',
       description: 'Digital Marketing Agency',
-      img: '',
-      link: '',
+      img: 'placeholder.png',
+      link: '#',
       stacks: [
         {
           icon: '',
           title: 'Jamstack',
+          link: 'https://www.netlify.com/',
         },
       ],
     },
@@ -120,12 +145,13 @@ const categories = ref({
       id: 3,
       title: 'Stella',
       description: 'Digital Marketing Agency',
-      img: '',
-      link: '',
+      img: 'placeholder.png',
+      link: '#',
       stacks: [
         {
           icon: '',
           title: 'Jamstack',
+          link: 'https://www.netlify.com/',
         },
       ],
     },

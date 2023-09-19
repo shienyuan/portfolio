@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <hr class="my-6" />
+      <AppHr />
 
       <div>
         <slot />
