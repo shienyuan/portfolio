@@ -76,8 +76,8 @@
       <div class="mt-6">
         <nuxt-img
           class="rounded shadow"
-          src="/images/about-1.jpeg"
           height="200"
+          src="/images/about-1.jpeg"
         />
       </div>
     </AppCard>
@@ -121,8 +121,12 @@
 
     <div class="text-center col-span-2">
       <AppButton>
-        <a href="/file/shien-yuan-23.pdf" download>Download My CV</a>
+        <NuxtLink to="/contact">View My CV</NuxtLink>
       </AppButton>
+
+      <div class="mt-3 text-gray-400">
+        (<a download href="/file/shien-yuan-23.pdf">Download</a>)
+      </div>
     </div>
 
     <!--    <div class="text-center pt-8">-->

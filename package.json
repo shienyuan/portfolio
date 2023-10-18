@@ -1,6 +1,6 @@
 {
   "name": "shien-yuan-portfolio",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -34,6 +34,7 @@
     "@heroicons/vue": "^2.0.18",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "dayjs": "^1.11.9",
-    "nuxt-headlessui": "^1.1.4"
+    "nuxt-headlessui": "^1.1.4",
+    "vue-pdf": "^4.3.0"
   }
 }
